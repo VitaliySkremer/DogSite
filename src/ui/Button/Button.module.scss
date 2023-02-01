@@ -1,0 +1,21 @@
+.btn {
+  border: none;
+  background-color: var(--btn-bg);
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  transition: background-color .2s ease;
+  cursor: pointer;
+  font-size: 18px;
+  &:hover{
+    background-color: var(--link-hover);
+  }
+}
+
+.small {
+  width: fit-content;
+}
+
+.full {
+  width: 100%;
+}

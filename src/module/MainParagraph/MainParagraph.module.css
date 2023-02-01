@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 25px 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.title_bold {
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=MainParagraph.module.css.map */

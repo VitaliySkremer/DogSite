@@ -1,10 +1,19 @@
 import {Navigate} from "./module/Navigate/Navigate";
+import {BrowserRouter} from "react-router-dom";
+import {NavigateRoutes} from "./module/Navigate/NavigateRoutes";
 
 function App() {
   return (
-    <div className="App">
-      <Navigate/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navigate/>
+        <main className='main'>
+          <div className='main_wrapper'>
+            <NavigateRoutes/>
+          </div>
+        </main>
+      </div>
+    </BrowserRouter>
   )
 }
 

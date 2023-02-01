@@ -1,0 +1,17 @@
+.link {
+  width: 100%;
+  padding: 10px 0;
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+  text-decoration: none;
+  font-size: 20px;
+
+  transition-timing-function: ease;
+  transition-property: border-bottom-color, color;
+  transition-duration: .2s;
+
+  &:hover {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+  }
+}
