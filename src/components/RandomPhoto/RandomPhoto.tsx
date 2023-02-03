@@ -10,23 +10,22 @@ interface DogData {
 
 export const RandomPhoto = () => {
   const [img,setImg] = useState('');
-  const [toogle, setToogle] = useState(false);
+
+  const getImg = async () => {
+    const data:DogData = await ky('https://dog.ceo/api/breeds/image/random').json();
+    setImg(data.message)
+  }
 
   useEffect(()=>{
-    const getImg = async ()=>{
-      const data:DogData = await ky('https://dog.ceo/api/breeds/image/random').json();
-      setImg(data.message)
-    }
-
     getImg();
-  },[toogle])
+  },[])
 
   return (
     <div className={styles.wrapper}>
       <Button
         size="small"
         className={styles.btn}
-        onClick={()=> setToogle(!toogle)}
+        onClick={getImg}
       >
         more dog!
       </Button>
