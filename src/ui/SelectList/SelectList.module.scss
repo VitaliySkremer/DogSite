@@ -1,0 +1,28 @@
+.select {
+  display: inline-block;
+  position: relative;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid var(--into-border);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  min-width: 200px;
+  text-align: start;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.btn__list {
+  cursor:pointer;
+  padding: 7px 12px;
+}

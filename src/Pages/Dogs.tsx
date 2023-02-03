@@ -6,11 +6,13 @@ import { responseThreePhoto } from "../utils/ResponseThreePhoto";
 import {useState} from "react";
 import {Tabs} from "../components/Tabs/Tabs";
 import {ISelect} from "../components/Tabs/Tabs";
+import {BreedList} from "../module/BreedList/BreedList";
 
 const listDogsTabs:Array<ISelect> = [
   {text:'Список всех парод'},
   {text:'Рандомная картинка'},
   {text:'По породе'},
+  {text:'Список пород'},
 ]
 
 export const Dogs = () => {
@@ -44,6 +46,7 @@ export const Dogs = () => {
           />
         </>
       )}
+      {select.text === 'Список пород'&& <BreedList/>}
     </div>
   )
 }
