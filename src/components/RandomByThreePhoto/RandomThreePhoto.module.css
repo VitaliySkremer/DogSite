@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.fetch {
+  margin-bottom: 25px;
+}
+
+.code {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  max-width: 50%;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=RandomThreePhoto.module.css.map */

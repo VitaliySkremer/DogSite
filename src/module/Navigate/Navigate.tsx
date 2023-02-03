@@ -9,7 +9,7 @@ interface linkedList {
 
 const linkedList:linkedList[] = [
   {
-    to:'/dog', text:'dog'
+    to:'/dogs', text:'Собаки'
   },{
     to:'/about', text:'about'
   },

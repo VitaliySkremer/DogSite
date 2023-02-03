@@ -4,16 +4,16 @@ export const MainParagraphe = () => {
   return (
     <section className={styles.wrapper}>
       <h1 className={styles.title}>
-        Welcome to a resource <span className={styles.title_bold}>full of dog pictures!</span>
+        Добро пожаловать на ресурс<span className={styles.title_bold}> полный различных картинок с собаками!</span>
       </h1>
       <p className={styles.paragraph}>
-        Here you can find out what breeds of dogs exist and see how they look.
+        Здесь ты можешь найти любую породу собаки и увидеть как она выглядит.
       </p>
       <p className={styles.paragraph}>
-        I will also leave some links for getting dog pictures from the API
+        Я также оставлю ссылки куда нужно делать запросы, чтобы получить эти картинки
       </p>
       <p className={styles.paragraph}>
-        Hope you find the dog you like!
+        Я надеюсь у тебя всё получится!
       </p>
     </section>
   )
