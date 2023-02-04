@@ -21,6 +21,7 @@ html {
 body {
   font-family: "Karla", sans-serif;
   color: var(--black);
+  min-width: 320px;
 }
 
 .main {
@@ -54,6 +55,12 @@ section {
 @media all and (max-width: 780px) {
   .main_wrapper {
     padding: 50px 30px;
+  }
+  section {
+    margin: 20px 0;
+  }
+  .title {
+    font-size: 20px;
   }
 }
 

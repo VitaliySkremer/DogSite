@@ -15,7 +15,7 @@ export const IntoCode = React.memo(({className,children, border = false, descrip
     <div className={className}>
       <p className={styles.description}>{description}</p>
       <div className={[styles.code, border?styles.border:'',size==='small'?styles.small:''].join(' ')}>
-        <pre>
+        <pre className={styles.code__font}>
           {children}
         </pre>
       </div>

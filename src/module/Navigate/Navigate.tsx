@@ -2,6 +2,7 @@ import styles from './Navigate.module.scss'
 import {LinkHref} from "../../ui/LinkHref/LinkHref";
 import {Link} from "react-router-dom";
 import {useState} from "react";
+import {SocialLinks} from "../../components/SocialLinks/SocialLinks";
 
 interface linkedList {
   to:string;
@@ -12,7 +13,7 @@ const linkedList:linkedList[] = [
   {
     to:'/dogs', text:'Собаки'
   },{
-    to:'/about', text:'about'
+    to:'/about', text:'О нас'
   },
 ]
 
@@ -35,11 +36,14 @@ export const Navigate = () => {
           <img className={styles.img} src="https://dog.ceo/img/dog-api-logo.svg" alt="dog"/>
         </Link>
         <h1 className={styles.title}>Dog</h1>
-        {linkedList.map(link=>
-          <LinkHref key={link.to} to={link.to}>
-            {link.text}
-          </LinkHref>
-        )}
+        <div className={styles.link__wrapper}>
+          {linkedList.map(link=>
+            <LinkHref key={link.to} to={link.to}>
+              {link.text}
+            </LinkHref>
+          )}
+        </div>
+        <SocialLinks/>
       </div>
       <button onClick={handler} className={styles.menu}>
         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

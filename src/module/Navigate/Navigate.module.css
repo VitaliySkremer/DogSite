@@ -12,6 +12,13 @@
   z-index: 1000;
 }
 
+.link__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .menu {
   position: absolute;
   top: 30px;
@@ -27,7 +34,7 @@
   border: none;
   align-self: end;
   margin-bottom: 10px;
-  display: block;
+  display: none;
 }
 
 .img {

@@ -29,7 +29,6 @@ export const BreedList = () => {
   const getImg = async () =>{
     const response:IImg = await ky(`https://dog.ceo/api/breed/${select}/images/random/6`).json()
     setImg(response.message)
-    console.log(response.message)
   }
 
   useEffect(()=>{

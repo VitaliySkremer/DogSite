@@ -1,0 +1,24 @@
+.wrapper {
+  align-self: flex-start;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  transition: color .2s ease;
+  font-size: 20px;
+  &:hover {
+    color: var(--link-hover);
+
+    svg path {
+      transition: fill .2s ease;
+      fill: var(--link-hover);
+    }
+  }
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}

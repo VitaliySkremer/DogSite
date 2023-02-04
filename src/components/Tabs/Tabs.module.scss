@@ -40,10 +40,13 @@
 @media all and (max-width: 870px) {
   .list {
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .item:not(:last-child){
-    margin-right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   .btn {
