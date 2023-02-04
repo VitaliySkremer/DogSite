@@ -20,4 +20,10 @@
   width: fit-content;
 }
 
+@media all and (max-width: 770px) {
+  .small {
+    width: auto;
+  }
+}
+
 /*# sourceMappingURL=IntoCode.module.css.map */

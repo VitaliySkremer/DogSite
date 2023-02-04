@@ -35,11 +35,12 @@ export const RandomByThreePhoto = ({title, fetch, result}:RandomByThreePhotoProp
       </IntoCode>
       <div className={styles.wrapper}>
         <IntoCode
+          className={styles.code}
           description='Ответ приходит примерно такой'
           size='small'>
           {result}
         </IntoCode>
-        <div className={styles.code}>
+        <div className={styles.img__block}>
           <Button className={styles.btn} onClick={getImg}>
             Ещё собачки!
           </Button>

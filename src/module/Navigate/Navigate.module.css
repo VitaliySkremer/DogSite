@@ -9,6 +9,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1000;
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  z-index: 999;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  align-self: end;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .img {
@@ -18,6 +37,29 @@
 .title {
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+@media all and (max-width: 1150px) {
+  .navigate {
+    transform: translateX(-150%);
+    width: 250px;
+    transition: transform 0.2s ease;
+  }
+  .isActive {
+    transform: none;
+  }
+  .close {
+    display: block;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media all and (max-width: 780px) {
+  .menu {
+    top: 10px;
+    left: 30px;
+  }
 }
 
 /*# sourceMappingURL=Navigate.module.css.map */

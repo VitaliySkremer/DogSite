@@ -1,16 +1,11 @@
 .wrapper {
   display: flex;
   align-items: center;
-  align-items: center;
-  padding: 25px;
+  justify-content: space-between;
 }
 
 .btn {
   margin-bottom: 15px;
-}
-
-.code {
-  width: 50%;
 }
 
 .img__wrapper {
@@ -21,11 +16,24 @@
 }
 
 .img {
-  max-width: 500px;
+  max-width: 300px;
 }
 
 .fetch {
   margin-bottom: 30px;
+}
+
+@media all and (max-width: 1450px) {
+  .wrapper {
+    display: block;
+  }
+  .img__wrapper {
+    width: 100%;
+  }
+  .code {
+    margin-bottom: 20px;
+    align-self: start;
+  }
 }
 
 /*# sourceMappingURL=RandomPhoto.module.css.map */

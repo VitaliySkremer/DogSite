@@ -8,19 +8,34 @@
   margin-bottom: 25px;
 }
 
-.code {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.img {
+  max-width: 300px;
 }
 
-.img {
-  max-width: 50%;
+.img__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
 }
 
 .btn {
   margin-bottom: 20px;
+}
+
+@media all and (max-width: 1450px) {
+  .wrapper {
+    display: block;
+  }
+  .img__wrapper {
+    width: 100%;
+  }
+  .img__block {
+    width: 100%;
+  }
+  .code {
+    margin-bottom: 25px;
+  }
 }
 
 /*# sourceMappingURL=RandomThreePhoto.module.css.map */

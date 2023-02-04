@@ -1,5 +1,4 @@
 import {IntoCode} from "../../ui/IntoCode/IntoCode";
-import styles from "../ListAllBreeds/ListAllBreeds.module.scss";
 import {listHound} from "../../utils/ListHound";
 
 export const ListByBreed = () => {
@@ -7,7 +6,7 @@ export const ListByBreed = () => {
     <section>
       <h3 className='title'>По пароде</h3>
       <IntoCode
-        className={styles.fetch}
+        className='fetch'
         description="Запрос делай сюда">
         https://dog.ceo/api/breed/hound/images
       </IntoCode>

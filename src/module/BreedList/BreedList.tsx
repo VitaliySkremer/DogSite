@@ -2,6 +2,7 @@ import {IntoCode} from "../../ui/IntoCode/IntoCode";
 import {SelectList} from "../../ui/SelectList/SelectList";
 import {useEffect, useState} from "react";
 import ky from "ky";
+import styles from './BreedList.module.scss'
 
 interface BreedList {
   status:string;
@@ -55,12 +56,12 @@ export const BreedList = () => {
         <IntoCode
           description='Посмотри какие милые пёсики:3'
         >
-          https://dog.ceo/api/breed/<SelectList list={breedList} select={select} setSelect={newSetSelect}/>/images/random
+          https://dog.ceo/api/breed/<SelectList list={breedList} select={select} setSelect={newSetSelect}/>/images/random/6
         </IntoCode>
       )}
       <div>
         {img.map(item=>
-          <img src={item} key={item} alt=""/>
+          <img className={styles.img} src={item} key={item} alt=""/>
         )}
       </div>
     </section>

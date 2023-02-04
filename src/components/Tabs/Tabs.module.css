@@ -34,4 +34,16 @@
   transform: none;
 }
 
+@media all and (max-width: 870px) {
+  .list {
+    justify-content: space-between;
+  }
+  .item:not(:last-child) {
+    margin-right: 0;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=Tabs.module.css.map */

@@ -44,3 +44,21 @@ body {
 section {
   margin: 40px 0;
 }
+
+.fetch {
+  margin-bottom: 25px;
+}
+
+@media all and (max-width: 1150px) {
+  .main {
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .main{
+    &_wrapper{
+      padding: 50px 30px;
+    }
+  }
+}
